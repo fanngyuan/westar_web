@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="am-topbar am-topbar-fixed-top">
-<!--<header class="am-topbar">-->
+<header class="am-topbar am-topbar-fixed-top" id="header">
+    <!--<header class="am-topbar">-->
     <div class="am-container-big">
         <h1 class="am-topbar-brand">
             <a href="#" alt="westar logo" class="logo-a"><img src="./assets/images/logo.png" alt=""></a>
@@ -29,7 +29,7 @@
                 <ul class="am-nav am-nav-pills am-topbar-nav">
                     <li class="am-active"><a href="#">技术</a>
                     </li>
-                    <li  class="am-dropdown" data-am-dropdown >
+                    <li class="am-dropdown" data-am-dropdown>
                         <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">新闻</a>
                         <ul class="am-dropdown-content">
                             <li>
@@ -108,7 +108,7 @@
 </header>
 
 <!--第一栏 开始 -->
-<div class="main-section section-one">
+<div class="main-section section-one" id="section-one">
     <div class="section-one-left">
         <h1>分层区块链的先行者</h1>
         <div class="section-one-desc">
@@ -234,9 +234,12 @@
                         <a href="http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg">
                             <h3 class="am-gallery-title">Lorem ipsum dolor?</h3>
                             <div class="section-faq-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
                             </div>
                         </a>
                     </div>
@@ -253,9 +256,12 @@
                         <a href="http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg">
                             <h3 class="am-gallery-title">Lorem ipsum dolor?</h3>
                             <div class="section-faq-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
                             </div>
                         </a>
                     </div>
@@ -271,9 +277,12 @@
                         <a href="http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg">
                             <h3 class="am-gallery-title">Lorem ipsum dolor?</h3>
                             <div class="section-faq-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
                             </div>
                         </a>
                     </div>
@@ -289,9 +298,12 @@
                         <a href="http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN742316019.jpg">
                             <h3 class="am-gallery-title">Lorem ipsum dolor?</h3>
                             <div class="section-faq-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore.
                             </div>
                         </a>
                     </div>
@@ -309,7 +321,7 @@
 
 <footer class="footer">
     <div class="footer-logo">
-        <img src="./assets/images/footer-logo.png"  width="50%" height="50%" alt="">
+        <img src="./assets/images/footer-logo.png" width="50%" height="50%" alt="">
     </div>
     <p class="foolter-slogo">关注我们，追踪项目最新状态</p>
     <div class="foolter-follow">
@@ -328,6 +340,24 @@
 </footer>
 <script src="assets/js/zepto.min.js"></script>
 <script src="assets/js/amazeui.min.js"></script>
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
+            if (top > 120) {
+                $("#header").css({"background": "#110651"})
+            } else {
+                $("#header").css({"background-color": "rgba(0,0,0,0)"})
+            }
+        });
+
+        $("#section-one").scroll(function () {
+            var top = $("#section-one").scrollTop();
+            console.log(top);
+        });
+
+    })
+</script>
 
 </body>
 </html>
