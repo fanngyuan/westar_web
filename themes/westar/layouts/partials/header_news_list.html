@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>westar</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="alternate icon" type="image/png" href="{{ .Site.BaseURL }}i/favicon.png">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/amazeui.min.css"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+</head>
+<body>
+<header class="am-topbar am-topbar-fixed-top" style="background: #110651;">
+    <!--<header class="am-topbar">-->
+    <div class="am-container-big">
+        <h1 class="am-topbar-brand">
+            <a href="{{ .Site.BaseURL }}" alt="westar logo" class="logo-a"><img src="{{ .Site.BaseURL }}images/logo.png" alt=""></a>
+        </h1>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+                data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+                class="am-icon-bars"></span></button>
+
+        <div class="am-collapse am-topbar-collapse" id="collapse-head">
+            <div class="am-topbar-right">
+                <ul class="am-nav am-nav-pills am-topbar-nav">
+                    <li class="am-dropdown " data-am-dropdown >
+                        <a  class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">技术</a>
+                        <ul class="am-dropdown-content">
+                            <li>
+                                <a href="/sirius.html">
+                                    <div class="nav-dropdown-item">
+                                        <div class="left">
+                                            <div class="icon nav-icon-sirius">
+
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <h3 class="am-gallery-title">Sirius Protocol</h3>
+                                            <div class="section-faq-desc">
+                                                去中心化、安全、多方、及时的二层支付协议
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/thor.html">
+                                    <div class="nav-dropdown-item">
+                                        <div class="left">
+                                            <div class="icon nav-icon-thor">
+
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <h3 class="am-gallery-title">Thor Protocol</h3>
+                                            <div class="section-faq-desc">
+                                                闪电网络上的智能合约和仲裁服务
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/stargate.html">
+                                    <div class="nav-dropdown-item">
+                                        <div class="left">
+                                            <div class="icon nav-icon-stargate">
+
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <h3 class="am-gallery-title">Stargate Protocol</h3>
+                                            <div class="section-faq-desc">
+                                                Starcoin 的二层协议实现
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="am-dropdown" data-am-dropdown>
+                        <a href="/news/">新闻</a>
+                    </li>
+                    <li><a href="/contact.html">开发者</a></li>
+                    <li><a href="/about.html">关于我们</a></li>
+                    <li class="am-dropdown" data-am-dropdown>
+                        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                            中文 <span class="am-icon-caret-down"></span>
+                        </a>
+                        <ul class="am-dropdown-content world-list">
+                            <li><a href="#">默认样式</a></li>
+                            <li><a href="#">基础设置</a></li>
+                            <li><a href="#">文字排版</a></li>
+                            <li><a href="#">网格系统</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
