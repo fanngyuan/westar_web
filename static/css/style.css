@@ -748,7 +748,7 @@ ul.am-dropdown-content > li > a {
 }
 
 
-@media screen and (min-width: 1980px) {
+@media screen and (min-width: 1920px) {
     .section-bg-resize {
         height: 825px;
         background-size: 1100px 825px;
