@@ -72,6 +72,9 @@
     padding: 30px 0 50px 0;
     text-align: center;
 }
+.lg-block-grid-3>li:nth-of-type(n){
+    padding: 0px 20px;
+}
 
 .footer p {
     color: #7f8c8d;
@@ -570,29 +573,34 @@ ul.am-dropdown-content > li > a {
 }
 
 .am-gallery-imgbordered .am-gallery-item img.technology-item-icon {
-    width: 144px;
-    height: 104px;
+    width: 172px;
+    height: 132px;
     border: none;
+    box-shadow: none;
+}
+
+.max-1200 {
+    max-width: 1200px;
 }
 
 .technology-item-icon {
     position: relative;
 }
 
-.technology-item-icon-hub {
-    height: 188px;
-    width: 109px;
-}
+/*.am-gallery-imgbordered .am-gallery-item img.technology-item-icon-hub {*/
+/*height: 109px;*/
+/*width: 188px;*/
+/*}*/
 
-.technology-item-icon-hub-safe {
-    height: 139px;
-    width: 135px;
-}
+/*.am-gallery-imgbordered .am-gallery-item img.technology-item-icon-hub-safe {*/
+/*width: 139px;*/
+/*height: 135px;*/
+/*}*/
 
-.technology-item-icon-hub-chanle {
-    height: 140px;
-    width: 139px;
-}
+/*.am-gallery-imgbordered .am-gallery-item img.technology-item-icon-hub-chanle {*/
+/*width: 140px;*/
+/*height: 139px;*/
+/*}*/
 
 .technology-item-icon-line-left {
     width: 1px;
@@ -739,7 +747,7 @@ ul.am-dropdown-content > li > a {
     width: 55px;
     text-align: center;
     line-height: 55px;
-    border-radius: 25px;
+    border-radius: 55px;
     background: #1527c8;
     color: #24fdf7;
     font-family: PingFangSC-Semibold, PingFang SC;
@@ -877,6 +885,7 @@ ul.am-dropdown-content > li > a {
     margin: 40px auto;
     display: block;
 }
+
 
 /*news*/
 .footer-news {
@@ -1418,10 +1427,12 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         left: 36px;
         /*top: 48px;*/
     }
-    .nav-dropdown-item .right .section-faq-desc{
+
+    .nav-dropdown-item .right .section-faq-desc {
         font-size: 22px;
         margin-top: 20px;
     }
+
     /*end*/
 }
 
@@ -1564,51 +1575,17 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
     .am-dropdown .am-dropdown-content > li {
         height: 45px;
     }
-    .am-nav>li.am-active>a, .am-nav>li.am-active>a:hover, .am-nav>li.am-active>a:focus{
+
+    .am-nav > li.am-active > a, .am-nav > li.am-active > a:hover, .am-nav > li.am-active > a:focus {
         background: none;
         color: #000000;
     }
-    .am-btn-secondary:hover, .am-btn-secondary:focus, .am-btn-secondary:active, .am-btn-secondary.am-active, .am-active .am-dropdown-toggle.am-btn-secondary{
+
+    .am-btn-secondary:hover, .am-btn-secondary:focus, .am-btn-secondary:active, .am-btn-secondary.am-active, .am-active .am-dropdown-toggle.am-btn-secondary {
         background: rgba(21, 39, 200, 1);
         color: #ffffff;
     }
-    /*.section-bg-resize {*/
-    /*height: 133px;*/
-    /*background-size: 177px 133px;*/
-    /*}*/
-    /*.section-one {*/
-    /*height: 268px;*/
-    /*}*/
-    /*.section-one-left {*/
-    /*width: 50%;*/
-    /*margin: 0px 5%;*/
-    /*}*/
-    /*.section-one-right {*/
-    /*width: 50%;*/
-    /*}*/
-    /*.section-one-left h1, .section-one-left h3, .section-one-right h3 {*/
-    /*top: 23px;*/
-    /*height: 16px;*/
-    /*font-size: 14px;*/
-    /*font-family: PingFangSC-Semibold, PingFang SC;*/
-    /*font-weight: 600;*/
-    /*color: rgba(255, 255, 255, 1);*/
-    /*line-height: 14px;*/
-    /*}*/
-    /*.section-one-left .section-one-desc, .section-one-right .section-one-desc {*/
-    /*top: 46px;*/
-    /*font-size: 10px;*/
-    /*font-family: PingFangSC-Regular, PingFang SC;*/
-    /*font-weight: 400;*/
-    /*color: rgba(255, 255, 255, 1);*/
-    /*line-height: 13px;*/
-    /*}*/
-    /*.section-one-left button, .section-one-desc button {*/
-    /*top: 90px;*/
-    /*width: 120px;*/
-    /*height: 30px;*/
-    /*line-height: 30px;*/
-    /*}*/
+
     .section-title {
         font-size: 24px;
         margin: 30px auto 30px;
@@ -1736,7 +1713,6 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         line-height: 14px;
     }
 
-
     .section-one-right button, .section-three-left button, .section-one-left button, .section-one-desc button {
         height: 25px;
         width: 120px;
@@ -1765,28 +1741,105 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         margin: 0px;
         padding-left: 15px;
     }
-    .nav-dropdown-item .left .icon{
+
+    .nav-dropdown-item .left .icon {
         width: 35px;
         height: 35px;
         left: 2px;
     }
-    .nav-dropdown-item .right{
+
+    .nav-dropdown-item .right {
         padding-left: 39px;
         padding-right: 39px;
     }
 }
 
-@media screen and (max-width: 320px){
-    .nav-dropdown-item .right .section-faq-desc{
+@media screen and (max-width: 320px) {
+    .nav-dropdown-item .right .section-faq-desc {
         display: none;
     }
+
     .nav-dropdown-item .right h3 {
         font-size: 13px;
         padding-top: 6px;
         padding-left: 10px;
     }
 
-    .am-topbar-collapse .am-dropdown.am-active .am-dropdown-content{
+    .am-topbar-collapse .am-dropdown.am-active .am-dropdown-content {
         min-width: 250px;
     }
 }
+
+@media screen and (max-width: 1440px) and (min-width: 1440px) {
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 44px;
+    }
+
+    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
+        font-size: 23px;
+    }
+
+    .section-one-left button, .section-one-desc button {
+        width: 200px;
+        height: 63px;
+        font-size: 18px;
+    }
+
+    .section-one-right button, .section-three-left button {
+        width: 181px;
+        height: 58px;
+        font-size: 18px;
+    }
+
+    .am-gallery-imgbordered h3.am-gallery-title {
+        font-size: 28px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        line-height: 40px;
+    }
+
+    .am-gallery-imgbordered .am-gallery-desc {
+        font-size: 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        line-height: 22px;
+    }
+
+    .section-news-desc {
+        font-size: 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+
+    .news-button {
+        width: 254px;
+        height: 58px;
+        border-radius: 29px;
+        border: 2px solid rgba(36, 253, 247, 1);
+        font-size: 18px;
+        line-height: 58px;
+    }
+
+    .am-gallery-imgbordered h3.am-gallery-title {
+        font-size: 32px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        /*line-height:45px;*/
+    }
+
+    .faq-container-item-bg .section-faq-desc {
+        font-size: 18px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        line-height: 25px;
+    }
+
+}
+
