@@ -225,7 +225,7 @@ body {
 
 .nav-dropdown-item .right .section-faq-desc {
     /*font-size: 12px;*/
-    margin: -17px 0px 0px 0px;
+    margin: -8px 0px 0px 0px;
 
     height: 14px;
     font-size: 10px;
@@ -316,7 +316,8 @@ ul.am-dropdown-content > li > a {
     height: 100%;
     overflow: hidden;
     /*background-size: cover;*/
-    background: #110651;
+    background: #130555;
+    position: relative;
 }
 
 .section-bg {
@@ -324,76 +325,118 @@ ul.am-dropdown-content > li > a {
 }
 
 .section-one {
-    background: #110651 url("../images/section_one.png") no-repeat center center;
-    /*background-size: cover;*/
     overflow: hidden;
-    /*width:100%;*/
-    background-size: 100% 100%;
-    /*margin-top: 121px;*/
-    padding-top: 128px;
-    height: 576px;
+    position: relative;
+}
+
+.section-one-bg {
+    padding-top: 56.25%;
+    background: url("../images/section_one.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .section-two {
-    background: #110651;
+    background: #130555;
     overflow: hidden;
-    width: 100%;
-
     clear: both;
     float: left;
-    background: #110651 url("../images/home_sirus@2x.png") no-repeat bottom left;
-    /*background-attachment: fixed;*/
-    /*background-size: 50% 50%;*/
-    background-size: 560px 427px;
     display: block;
-    float: left;
-    height: 427px;
+    position: relative;
 }
 
 .section-three {
     overflow: hidden;
     width: 100%;
-
     clear: both;
     float: left;
-
-    background: #110651 url("../images/section_three.png") no-repeat bottom right;
-
-    background-size: 569px 427px;
     display: block;
-    height: 427px;
+    position: relative;
+}
+
+.section-two-bg {
+    padding-top: 41.66%;
+    background: url("../images/home_sirus@2x.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 55.57%;
+    float: left;
+}
+
+.section-three-bg {
+    padding-top: 41.66%;
+    background: url("../images/section_three.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 55.57%;
+    float: right;
+}
+
+.section-four-bg {
+    padding-top: 41.66%;
+    background: url("../images/section_four.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 55.57%;
+    float: left;
+}
+
+.section-two-right {
+    width: 40%;
+    height: auto;
+    float: right;
+}
+
+.section-three-left {
+    position: absolute;
+}
+
+.section-three-left h3 {
+    top: 17.62%;
+}
+
+.section-three-left .section-one-desc {
+    top: 32%;
+}
+
+.section-three-left button {
+    top: 57.5%;
 }
 
 .section-four {
     overflow: hidden;
     width: 100%;
-
     clear: both;
     float: left;
-    background: #110651 url("../images/section_four.png") no-repeat bottom left;
-
-    background-size: 569px 427px;
+    /*background: #110651;*/
+    background: #130555;
     display: block;
-    height: 427px;
 }
 
 .section-one-left {
-    height: 660px;
     width: 60%;
     float: left;
     color: #ffffff;
-    line-height: 660px;
     margin: 0px 15%;
-    position: relative;
+    font-size: 16px;
+    height: 100%;
 }
 
 .section-one-right {
-    float: right;
-    height: 660px;
+    float: left;
     width: 40%;
     color: #ffffff;
-    line-height: 660px;
-    position: relative;
+    margin-left: -10%;
+}
+
+.section-one-left {
+    float: left;
+    width: 40%;
+    color: #ffffff;
 }
 
 .section-one-left h1, .section-one-left h3, .section-one-left .section-one-desc, .section-one-right h3 {
@@ -401,70 +444,85 @@ ul.am-dropdown-content > li > a {
 }
 
 .section-one-left h1, .section-one-left h3, .section-one-right h3 {
-    /*font-size: 56px;*/
-    /*font-weight: 400;*/
     position: absolute;
-    top: 92px;
-
-    height: 48px;
-    font-size: 34px;
+    top: 32.87%;
+    font-size: 3.68em;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
-    line-height: 48px;
+}
 
+.section-one-right h3 {
+    top: 21.62%;
+}
+
+.section-three-left h3 {
+    top: 21.62%;
 }
 
 .section-one-left .section-one-desc, .section-one-right .section-one-desc {
     position: absolute;
-    top: 154px;
-
-    height: 20px;
-    font-size: 14px;
+    top: 43.33%;
+    /*height: 20px;*/
+    font-size: 2.0em;
     font-family: PingFangSC-Light, PingFang SC;
     font-weight: 300;
     color: rgba(255, 255, 255, 1);
-    line-height: 20px;
+    /*line-height: 20px;*/
     letter-spacing: 1px;
+}
 
+.section-one-right .section-one-desc {
+    top: 36%;
+}
+
+.section-three-left .section-one-desc {
+    top: 36%;
 }
 
 .section-one-left button, .section-one-desc button {
-    width: 142px;
-    height: 48px;
+    width: 260px;
+    height: 60px;
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 1);
 
-    line-height: 48px;
+    line-height: 60px;
     overflow: hidden;
 
     display: inline-block;
     position: absolute;
-    top: 229px;
+    top: 62.12%;
     background: none;
 
-    font-size: 13px;
+    font-size: 22px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
-
 }
 
 .section-one-right button, .section-three-left button {
-    width: 129px;
-    height: 41px;
+    width: 241px;
+    height: 77px;
     background: rgba(21, 39, 200, 1);
-    border-radius: 21px;
+    border-radius: 39px;
 
     position: absolute;
     top: 270px;
     border: none;
 
-    font-size: 13px;
+    font-size: 22px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
     line-height: 41px;
+}
+
+.section-one-right button {
+    top: 63.12%;
+}
+
+.main-section .section-three-left button {
+    top: 63.12%;
 }
 
 .section-three-left button {
@@ -515,6 +573,21 @@ ul.am-dropdown-content > li > a {
 
 .technology-item-icon {
     position: relative;
+}
+
+.technology-item-icon-hub {
+    height: 188px;
+    width: 109px;
+}
+
+.technology-item-icon-hub-safe {
+    height: 139px;
+    width: 135px;
+}
+
+.technology-item-icon-hub-chanle {
+    height: 140px;
+    width: 139px;
 }
 
 .technology-item-icon-line-left {
@@ -745,385 +818,6 @@ ul.am-dropdown-content > li > a {
 .foolter-follow li img {
     width: 55px;
     height: 55px;
-}
-
-
-@media screen and (min-width: 1980px) {
-    .section-bg-resize {
-        height: 825px;
-        background-size: 1100px 825px;
-    }
-
-    .section-one {
-        background-size: 100% 100%;
-        padding-top: 128px;
-        height: 576px;
-    }
-
-    .logo-a, .logo-a img {
-        width: 274px;
-        height: 83px;
-    }
-
-    .am-topbar-nav > li.am-active > a {
-        font-size: 25px;
-    }
-
-    .section-one {
-        height: 1114px;
-    }
-
-    .am-topbar-nav > li > a {
-        font-size: 25px;
-    }
-
-    ul.am-dropdown-content {
-        width: 626px;
-        height: 453px;
-        background: rgba(255, 255, 255, 1);
-        box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08);
-    }
-
-    .nav-dropdown-item .right {
-        padding-left: 147px;
-        padding-top: 18px;
-    }
-
-    .nav-dropdown-item .right h3 {
-        font-size: 29px;
-    }
-
-    .am-dropdown .am-dropdown-content > li {
-        height: 135px;
-        width: 626px;
-    }
-
-    .am-dropdown .am-dropdown-content > li a {
-        padding-top: 24px;
-        /*margin-top: 24px;*/
-        height: 135px;
-        width: 626px;
-    }
-
-    .nav-dropdown-item .right .section-faq-desc {
-        font-size: 19px;
-    }
-
-    .nav-dropdown-item .left .icon {
-        width: 87px;
-        height: 87px;
-        left: 36px;
-        /*top: 48px;*/
-    }
-
-    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
-        top: 238px;
-        font-size: 61px;
-        font-family: PingFangSC-Semibold, PingFang SC;
-        font-weight: 600;
-        color: rgba(255, 255, 255, 1);
-        line-height: 85px;
-    }
-
-    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
-        top: 355px;
-        font-size: 32px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 1);
-        line-height: 44px;
-        letter-spacing: 3px;
-    }
-
-    .section-one-left button, .section-one-desc button {
-        top: 501px;
-        width: 275px;
-        height: 94px;
-        border-radius: 47px;
-        border: 2px solid rgba(255, 255, 255, 1);
-        font-size: 25px;
-        line-height: 94px;
-    }
-    .section-one-right{
-        margin-right: 10%;
-    }
-    .section-one-right button, .section-three-left button {
-        width: 249px;
-        height: 80px;
-        background: rgba(21, 39, 200, 1);
-        border-radius: 40px;
-        top: 521px;
-        font-size: 25px;
-    }
-
-    .section-three-left button {
-        display: inline-block;
-        position: absolute;
-        top: 474px;
-        line-height: 80px;
-        border: none;
-    }
-
-    .section-title {
-        font-size: 66px;
-        margin: 110px auto 83px;
-    }
-
-    .am-gallery-imgbordered h3.am-gallery-title {
-        font-size: 39px;
-        font-family: PingFangSC-Semibold, PingFang SC;
-        font-weight: 600;
-        color: rgba(255, 255, 255, 1);
-        line-height: 55px;
-    }
-
-    .section-news-desc {
-        font-size: 22px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 1);
-        line-height: 30px;
-        letter-spacing: 1px;
-    }
-
-    .footer-logo img {
-        width: 187px;
-        height: 187px;
-    }
-
-    .news-button {
-        width: 349px;
-        height: 80px;
-        border-radius: 40px;
-        border: 2px solid rgba(36, 253, 247, 1);
-        line-height: 80px;
-        text-align: center;
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .section-bg-resize {
-        height: 320px;
-        background-size: 427px 320px;
-    }
-
-    .section-one {
-        height: 432px;
-    }
-
-    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
-        top: 57px;
-        font-size: 23px;
-        font-family: PingFangSC-Semibold, PingFang SC;
-        font-weight: 600;
-        color: rgba(255, 255, 255, 1);
-        line-height: 33px;
-    }
-
-    .section-one-left .section-one-desc {
-        top: 102px;
-        font-size: 14px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 1);
-        line-height: 17px;
-        letter-spacing: 1px;
-    }
-
-    .section-one-left button, .section-one-desc button {
-        top: 172px;
-    }
-
-    .section-one-right h3 {
-        top: 69px;
-    }
-
-    .section-one-right .section-one-desc {
-        top: 115px;
-    }
-    .section-one-right button, .section-three-left button{
-        top: 202px;
-    }
-}
-
-@media screen and (min-width: 320px)and (max-width: 767px) {
-    .am-topbar-right > ul {
-        background: #FFFFFF;
-        color: #000000;
-        padding-bottom: 20px;
-    }
-
-    .am-topbar-right ul li a {
-        color: #000000;
-        height: 50px;
-        line-height: 50px;
-        display: block;
-    }
-
-    .am-topbar-right ul li {
-        height: 50px;
-        line-height: 50px;
-    }
-    .am-topbar-collapse.am-in{
-        overflow-y: unset;
-    }
-    .am-topbar-btn {
-        margin-top: 42px;
-    }
-    .am-topbar-collapse .am-dropdown.am-active .am-dropdown-content {
-        top: 0px;
-        box-shadow: 3px 3px 5px #dddddd;
-        border: none;
-    }
-    .am-dropdown .am-dropdown-content > li{
-        height: 45px;
-    }
-
-    .section-bg-resize {
-        height: 133px;
-        background-size: 177px 133px;
-    }
-
-    .section-one {
-        height: 268px;
-    }
-
-    .section-one-left {
-        width: 50%;
-        margin: 0px 5%;
-    }
-
-    .section-one-right {
-        width: 50%;
-    }
-
-    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
-        top: 23px;
-        height: 16px;
-        font-size: 14px;
-        font-family: PingFangSC-Semibold, PingFang SC;
-        font-weight: 600;
-        color: rgba(255, 255, 255, 1);
-        line-height: 14px;
-    }
-
-    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
-        top: 46px;
-        font-size: 10px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 1);
-        line-height: 13px;
-    }
-
-    .section-one-left button, .section-one-desc button {
-        top: 90px;
-        width: 120px;
-        height: 30px;
-        line-height: 30px;
-    }
-
-    .section-title {
-        font-size:24px;
-        margin: 30px auto 30px;
-    }
-
-    .faq-container-item-bg .right {
-        margin-left: 25px;
-        margin-top: -8px;
-    }
-
-    .faq-container-item-bg .left {
-        height: 35px;
-        width: 35px;
-        display: block;
-        top: 11px;
-        left: 5px;
-        position: absolute;
-    }
-
-    .faq-container-item-bg .left .ico {
-        height: 35px;
-        width: 35px;
-        text-align: center;
-        line-height: 35px;
-        border-radius: 25px;
-        background: #1527c8;
-        color: #24fdf7;
-        font-family: PingFangSC-Semibold, PingFang SC;
-        font-weight: 700;
-        font-size: 1.6em;
-    }
-
-    .am-gallery-imgbordered h3.am-gallery-title {
-        height: auto;
-        line-height: 20px;
-        font-size: 14px;
-    }
-
-    .faq-container-item-bg .section-faq-desc {
-        display: none;
-    }
-
-    .section-one-right h3 {
-        top: 20px;
-    }
-
-    .section-one-right .section-one-desc {
-        top: 42px;
-        letter-spacing: -1px;
-        margin-right: 15px;
-    }
-
-    .section-one-right button, .section-three-left button {
-        top: 88px;
-        width: 120px;
-        height: 30px;
-        line-height: 30px;
-    }
-    .news-button{
-        width: 120px;
-        height: 30px;
-        border-radius: 21px;
-        border: 1px solid rgba(36, 253, 247, 1);
-        margin: 50px auto 58px;
-        line-height: 30px;
-        text-align: center;
-        color: #22e0e4;
-        font-size: 13px;
-    }
-    .footer-logo img{
-        margin: 60px auto 0px;
-    }
-    .foolter-follow li img, .foolter-follow li {
-        width: 30px;
-        height: 30px;
-        margin: 0px;
-    }
-
-    .footer p {
-        font-size: 14px;
-    }
-
-    ul, ol {
-        padding: 0px;
-    }
-
-    /*内页*/
-    .technology-item-title .technology-item-icon-line-right,.technology-item-icon-line-left{
-        background: none;
-    }
-    .item-title .about-head .desc{
-        font-size: 22px;
-    }
-    .am-container .item-container {
-        width: 80%;
-    }
-    .news-title{
-        font-size: 24px;
-        line-height: 30px;
-    }
 }
 
 /*item*/
@@ -1476,4 +1170,538 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
 
 .about-team-members .item-container {
     background: none;
+}
+
+.logo-a, .logo-a img {
+    width: 264px;
+    height: 83px;
+}
+
+.am-topbar-nav > li.am-active > a {
+    font-size: 25px;
+}
+
+.section-title {
+    /*font-size: 66px;*/
+    font-size: 3em;
+    margin: 110px auto 83px;
+}
+
+.am-gallery-imgbordered h3.am-gallery-title {
+    font-size: 22px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height: 55px;
+}
+
+.section-news-desc {
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.footer-logo img {
+    width: 187px;
+    height: 187px;
+}
+
+.news-button {
+    width: 349px;
+    height: 80px;
+    border-radius: 40px;
+    border: 2px solid rgba(36, 253, 247, 1);
+    line-height: 80px;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1920px) {
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 2.6em;
+    }
+
+    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
+        font-size: 1.8em;
+        padding-top: 15px;
+    }
+
+    .am-topbar-nav > li.am-active > a {
+        font-size: 25px;
+    }
+
+    .am-topbar-nav > li > a {
+        font-size: 13px;
+    }
+
+    /*start*/
+    .am-topbar-nav > li > a {
+        font-size: 25px;
+    }
+
+    ul.am-dropdown-content {
+        width: 626px;
+        height: 453px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-dropdown-item .right {
+        padding-left: 147px;
+        padding-top: 18px;
+    }
+
+    .nav-dropdown-item .right h3 {
+        font-size: 29px;
+    }
+
+    .am-dropdown .am-dropdown-content > li {
+        height: 135px;
+        width: 626px;
+    }
+
+    .am-dropdown .am-dropdown-content > li a {
+        padding-top: 24px;
+        height: 135px;
+        width: 626px;
+    }
+
+    .nav-dropdown-item .right .section-faq-desc {
+        font-size: 19px;
+    }
+
+    .nav-dropdown-item .left .icon {
+        width: 87px;
+        height: 87px;
+        left: 36px;
+        /*top: 48px;*/
+    }
+
+    .am-topbar-right ul > li {
+        font-size: 16px;
+    }
+
+    /*end*/
+}
+
+@media screen and (max-width: 1400px) {
+    .section-title {
+        font-size: 46px;
+    }
+
+    .am-gallery-imgbordered h3.am-gallery-title {
+        font-size: 22px;
+    }
+
+    .section-news-desc {
+        font-size: 16px;
+    }
+
+    .am-topbar-nav > li.am-active > a {
+        font-size: 16px;
+    }
+
+    .am-topbar-nav > li > a {
+        font-size: 16px;
+    }
+
+    .logo-a, .logo-a img {
+        width: 187px;
+        height: 58px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .logo-a, .logo-a img {
+        width: 171px;
+        height: 53px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 2.3em;
+    }
+
+    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
+        font-size: 1.5em;
+        padding-top: 15px;
+    }
+
+    .am-topbar-nav > li > a, .am-topbar-nav > li.am-active > a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 97px;
+        height: 112px;
+    }
+
+    .logo-a, .logo-a img {
+        width: 137px;
+        height: 43px;
+    }
+
+    /*start*/
+    /*.am-topbar-nav > li > a {*/
+    /*font-size: 25px;*/
+    /*}*/
+    /*ul.am-dropdown-content {*/
+    /*width: 626px;*/
+    /*height: 453px;*/
+    /*background: rgba(255, 255, 255, 1);*/
+    /*box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08);*/
+    /*}*/
+    /*.nav-dropdown-item .right {*/
+    /*padding-left: 147px;*/
+    /*padding-top: 18px;*/
+    /*}*/
+    /*.nav-dropdown-item .right h3 {*/
+    /*font-size: 29px;*/
+    /*}*/
+    /*.am-dropdown .am-dropdown-content > li {*/
+    /*height: 135px;*/
+    /*width: 626px;*/
+    /*}*/
+    /*.am-dropdown .am-dropdown-content > li a {*/
+    /*padding-top: 24px;*/
+    /*height: 135px;*/
+    /*width: 626px;*/
+    /*}*/
+    /*.nav-dropdown-item .right .section-faq-desc {*/
+    /*font-size: 19px;*/
+    /*}*/
+    /*.nav-dropdown-item .left .icon {*/
+    /*width: 87px;*/
+    /*height: 87px;*/
+    /*left: 36px;*/
+    /*!*top: 48px;*!*/
+    /*}*/
+    /*end*/
+}
+
+@media screen and (max-width: 768px) {
+    .logo-a, .logo-a img {
+        width: 102px;
+        height: 32px;
+    }
+
+    .am-topbar-nav > li.am-active > a {
+        font-size: 13px;
+    }
+
+    .am-topbar-nav > li > a {
+        font-size: 13px;
+    }
+
+    /*ul.am-dropdown-content {*/
+    /*width: 626px;*/
+    /*height: 453px;*/
+    /*background: rgba(255, 255, 255, 1);*/
+    /*box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08);*/
+    /*}*/
+    /*.nav-dropdown-item .right {*/
+    /*padding-left: 147px;*/
+    /*padding-top: 18px;*/
+    /*}*/
+    /*.nav-dropdown-item .right h3 {*/
+    /*font-size: 29px;*/
+    /*}*/
+    /*.am-dropdown .am-dropdown-content > li {*/
+    /*height: 135px;*/
+    /*width: 626px;*/
+    /*}*/
+    /*.am-dropdown .am-dropdown-content > li a {*/
+    /*padding-top: 24px;*/
+    /*height: 135px;*/
+    /*width: 626px;*/
+    /*}*/
+    /*.nav-dropdown-item .right .section-faq-desc {*/
+    /*font-size: 19px;*/
+    /*}*/
+    /*.nav-dropdown-item .left .icon {*/
+    /*width: 87px;*/
+    /*height: 87px;*/
+    /*left: 36px;*/
+    /*!*top: 48px;*!*/
+    /*}*/
+    .section-title {
+        margin: 110px auto 83px;
+    }
+
+    .am-gallery-imgbordered h3.am-gallery-title {
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        line-height: 55px;
+    }
+
+    .section-news-desc {
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+
+    .footer-logo img {
+        width: 73px;
+        height: 84px;
+    }
+
+    .news-button {
+        width: 180px;
+        height: 50px;
+        border-radius: 40px;
+        border: 2px solid rgba(36, 253, 247, 1);
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 1.8em;
+    }
+
+    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
+        font-size: 1.2em;
+    }
+
+    .section-one-right button, .section-three-left button, .section-one-left button, .section-one-desc button {
+        height: 40px;
+        width: 150px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 320px)and (max-width: 767px) {
+    .am-topbar-right > ul {
+        background: #FFFFFF;
+        color: #000000;
+        padding-bottom: 20px;
+    }
+
+    .am-topbar-right ul li a {
+        color: #000000;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+    }
+
+    .am-topbar-right ul li {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .am-topbar-collapse.am-in {
+        overflow-y: unset;
+    }
+
+    .am-topbar-btn {
+        margin-top: 42px;
+    }
+
+    .am-topbar-collapse .am-dropdown.am-active .am-dropdown-content {
+        top: 0px;
+        box-shadow: 3px 3px 5px #dddddd;
+        border: none;
+    }
+
+    .am-dropdown .am-dropdown-content > li {
+        height: 45px;
+    }
+
+    /*.section-bg-resize {*/
+    /*height: 133px;*/
+    /*background-size: 177px 133px;*/
+    /*}*/
+    /*.section-one {*/
+    /*height: 268px;*/
+    /*}*/
+    /*.section-one-left {*/
+    /*width: 50%;*/
+    /*margin: 0px 5%;*/
+    /*}*/
+    /*.section-one-right {*/
+    /*width: 50%;*/
+    /*}*/
+    /*.section-one-left h1, .section-one-left h3, .section-one-right h3 {*/
+    /*top: 23px;*/
+    /*height: 16px;*/
+    /*font-size: 14px;*/
+    /*font-family: PingFangSC-Semibold, PingFang SC;*/
+    /*font-weight: 600;*/
+    /*color: rgba(255, 255, 255, 1);*/
+    /*line-height: 14px;*/
+    /*}*/
+    /*.section-one-left .section-one-desc, .section-one-right .section-one-desc {*/
+    /*top: 46px;*/
+    /*font-size: 10px;*/
+    /*font-family: PingFangSC-Regular, PingFang SC;*/
+    /*font-weight: 400;*/
+    /*color: rgba(255, 255, 255, 1);*/
+    /*line-height: 13px;*/
+    /*}*/
+    /*.section-one-left button, .section-one-desc button {*/
+    /*top: 90px;*/
+    /*width: 120px;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*}*/
+    .section-title {
+        font-size: 24px;
+        margin: 30px auto 30px;
+    }
+
+    .faq-container-item-bg .right {
+        margin-left: 25px;
+        margin-top: -8px;
+    }
+
+    .faq-container-item-bg .left {
+        height: 35px;
+        width: 35px;
+        display: block;
+        top: 11px;
+        left: 5px;
+        position: absolute;
+    }
+
+    .faq-container-item-bg .left .ico {
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 25px;
+        background: #1527c8;
+        color: #24fdf7;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 700;
+        font-size: 1.6em;
+    }
+
+    .am-gallery-imgbordered h3.am-gallery-title {
+        height: auto;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .faq-container-item-bg .section-faq-desc {
+        display: none;
+    }
+
+    /*.section-one-right h3 {*/
+    /*top: 20px;*/
+    /*}*/
+    /*.section-one-right .section-one-desc {*/
+    /*top: 42px;*/
+    /*letter-spacing: -1px;*/
+    /*margin-right: 15px;*/
+    /*}*/
+    /*.section-one-right button, .section-three-left button {*/
+    /*top: 88px;*/
+    /*width: 120px;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*}*/
+    .news-button {
+        width: 120px;
+        height: 30px;
+        border-radius: 21px;
+        border: 1px solid rgba(36, 253, 247, 1);
+        margin: 50px auto 58px;
+        line-height: 30px;
+        text-align: center;
+        color: #22e0e4;
+        font-size: 13px;
+    }
+
+    .footer-logo img {
+        margin: 60px auto 0px;
+    }
+
+    .foolter-follow li img, .foolter-follow li {
+        width: 30px;
+        height: 30px;
+        margin: 0px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    ul, ol {
+        padding: 0px;
+    }
+
+    /*内页*/
+    .technology-item-title .technology-item-icon-line-right, .technology-item-icon-line-left {
+        background: none;
+    }
+
+    .item-title .about-head .desc {
+        font-size: 22px;
+    }
+
+    .am-container .item-container {
+        width: 80%;
+    }
+
+    .news-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .logo-a, .logo-a img {
+        width: 102px;
+        height: 32px;
+    }
+
+    .am-topbar-nav > li.am-active > a {
+        font-size: 13px;
+    }
+
+    .am-topbar-nav > li > a {
+        font-size: 13px;
+    }
+
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 13px;
+    }
+
+    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
+        font-size: 10px;
+        padding-top: 0px;
+    }
+
+    .section-one-right button, .section-three-left button, .section-one-left button, .section-one-desc button {
+        height: 25px;
+        width: 120px;
+        font-size: 12px;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+    .am-topbar{
+        margin-top: -30px;
+        height: 98px;
+    }
+    .nav-dropdown-item .right .section-faq-desc{
+        font-size: 12px;
+        letter-spacing: -2px;
+    }
+    .nav-dropdown-item .right h3{
+        font-size: 13px;
+    }
+    .nav-dropdown-item .right{
+        padding: 0px;
+        margin: 0px;
+        padding-left: 15px;
+    }
+    .nav-dropdown-item .left{
+        display: none;
+    }
 }
