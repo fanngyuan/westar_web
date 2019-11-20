@@ -166,7 +166,7 @@ body {
 .nav-dropdown-item {
     position: relative;
     height: 70px;
-    width: 324px;
+    /*width: 324px;*/
     padding: 0px;
     margin: 0px;
 }
@@ -238,7 +238,8 @@ body {
 ul.am-dropdown-content {
     margin: 0px;
     padding: 0px;
-    width: 324px;
+    /*width: 324px;*/
+    width: auto;
     overflow: hidden;
     top: 113px;
     padding-bottom: 25px;
@@ -268,7 +269,8 @@ ul.am-dropdown-content {
     margin: 0px;
     padding: 0px;
     height: 70px;
-    width: 324px;
+    /*width: 324px;*/
+    width: auto;
 }
 
 ul.am-dropdown-content > li > a {
@@ -285,6 +287,8 @@ ul.am-dropdown-content > li > a {
     height: 70px;
     padding-top: 12px;
     margin-top: 12px;
+    width: auto;
+    padding-right: 25px;
 }
 
 .logo-a, .logo-a img {
@@ -482,11 +486,11 @@ ul.am-dropdown-content > li > a {
 
 .section-one-left button, .section-one-desc button {
     width: 260px;
-    height: 60px;
-    border-radius: 24px;
+    height: 70px;
+    border-radius: 35px;
     border: 1px solid rgba(255, 255, 255, 1);
 
-    line-height: 60px;
+    line-height: 70px;
     overflow: hidden;
 
     display: inline-block;
@@ -1219,7 +1223,129 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
     font-size: 25px;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 2880px) {
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 5.5em;
+    }
+
+    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
+        font-size: 2.9em;
+    }
+
+    .am-topbar-nav > li > a, .am-topbar-nav > li.am-active > a {
+        font-size: 25px;
+    }
+
+    /*.nav-dropdown-item .right .section-faq-desc{*/
+    /*margin: -23px 0px 0px 0px;*/
+    /*}*/
+    ul.am-dropdown-content {
+        width: 626px;
+        height: 453px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-dropdown-item .right {
+        padding-left: 147px;
+        padding-top: 18px;
+    }
+
+    .nav-dropdown-item .right h3 {
+        font-size: 29px;
+    }
+
+    .am-dropdown .am-dropdown-content > li {
+        height: 135px;
+        width: 626px;
+    }
+
+    .am-dropdown .am-dropdown-content > li a {
+        padding-top: 24px;
+        height: 135px;
+        width: 626px;
+    }
+
+    .nav-dropdown-item .right .section-faq-desc {
+        font-size: 19px;
+    }
+
+    .nav-dropdown-item .left .icon {
+        width: 87px;
+        height: 87px;
+        left: 36px;
+        /*top: 48px;*/
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .logo-a, .logo-a img {
+        width: 171px;
+        height: 53px;
+    }
+
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 2.3em;
+    }
+
+    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
+        font-size: 1.5em;
+        padding-top: 15px;
+    }
+
+    .am-topbar-nav > li > a, .am-topbar-nav > li.am-active > a {
+        font-size: 16px;
+    }
+
+    .footer-logo img {
+        width: 97px;
+        height: 112px;
+    }
+
+    .logo-a, .logo-a img {
+        width: 137px;
+        height: 43px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1979px) {
+    .section-title {
+        font-size: 46px;
+    }
+
+    .am-gallery-imgbordered h3.am-gallery-title {
+        font-size: 22px;
+    }
+
+    .section-news-desc {
+        font-size: 16px;
+    }
+
+    .am-topbar-nav > li.am-active > a {
+        font-size: 16px;
+    }
+
+    .am-topbar-nav > li > a {
+        font-size: 16px;
+    }
+
+    .logo-a, .logo-a img {
+        width: 187px;
+        height: 58px;
+    }
+
+    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2879px) {
     .section-one-left h1, .section-one-left h3, .section-one-right h3 {
         font-size: 2.6em;
     }
@@ -1238,6 +1364,19 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
     }
 
     /*start*/
+    .am-topbar-nav > li > a {
+        font-size: 25px;
+    }
+
+    .am-topbar-right ul > li {
+        font-size: 16px;
+    }
+
+    .logo-a, .logo-a img {
+        width: 256px;
+        height: 80px;
+    }
+
     .am-topbar-nav > li > a {
         font-size: 25px;
     }
@@ -1279,107 +1418,10 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         left: 36px;
         /*top: 48px;*/
     }
-
-    .am-topbar-right ul > li {
-        font-size: 16px;
-    }
-
-    /*end*/
-}
-
-@media screen and (max-width: 1400px) {
-    .section-title {
-        font-size: 46px;
-    }
-
-    .am-gallery-imgbordered h3.am-gallery-title {
+    .nav-dropdown-item .right .section-faq-desc{
         font-size: 22px;
+        margin-top: 20px;
     }
-
-    .section-news-desc {
-        font-size: 16px;
-    }
-
-    .am-topbar-nav > li.am-active > a {
-        font-size: 16px;
-    }
-
-    .am-topbar-nav > li > a {
-        font-size: 16px;
-    }
-
-    .logo-a, .logo-a img {
-        width: 187px;
-        height: 58px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .logo-a, .logo-a img {
-        width: 171px;
-        height: 53px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .section-one-left h1, .section-one-left h3, .section-one-right h3 {
-        font-size: 2.3em;
-    }
-
-    .section-one-left .section-one-desc, .section-one-right .section-one-desc {
-        font-size: 1.5em;
-        padding-top: 15px;
-    }
-
-    .am-topbar-nav > li > a, .am-topbar-nav > li.am-active > a {
-        font-size: 16px;
-    }
-
-    .footer-logo img {
-        width: 97px;
-        height: 112px;
-    }
-
-    .logo-a, .logo-a img {
-        width: 137px;
-        height: 43px;
-    }
-
-    /*start*/
-    /*.am-topbar-nav > li > a {*/
-    /*font-size: 25px;*/
-    /*}*/
-    /*ul.am-dropdown-content {*/
-    /*width: 626px;*/
-    /*height: 453px;*/
-    /*background: rgba(255, 255, 255, 1);*/
-    /*box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08);*/
-    /*}*/
-    /*.nav-dropdown-item .right {*/
-    /*padding-left: 147px;*/
-    /*padding-top: 18px;*/
-    /*}*/
-    /*.nav-dropdown-item .right h3 {*/
-    /*font-size: 29px;*/
-    /*}*/
-    /*.am-dropdown .am-dropdown-content > li {*/
-    /*height: 135px;*/
-    /*width: 626px;*/
-    /*}*/
-    /*.am-dropdown .am-dropdown-content > li a {*/
-    /*padding-top: 24px;*/
-    /*height: 135px;*/
-    /*width: 626px;*/
-    /*}*/
-    /*.nav-dropdown-item .right .section-faq-desc {*/
-    /*font-size: 19px;*/
-    /*}*/
-    /*.nav-dropdown-item .left .icon {*/
-    /*width: 87px;*/
-    /*height: 87px;*/
-    /*left: 36px;*/
-    /*!*top: 48px;*!*/
-    /*}*/
     /*end*/
 }
 
@@ -1509,6 +1551,8 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         top: 0px;
         box-shadow: 3px 3px 5px #dddddd;
         border: none;
+        width: auto;
+        /*width: 255px;*/
     }
 
     .am-dropdown .am-dropdown-content > li {
@@ -1685,23 +1729,46 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         line-height: 25px;
         margin-top: 10px;
     }
-    .am-topbar{
+
+    .am-topbar {
         margin-top: -30px;
         height: 98px;
     }
-    .nav-dropdown-item .right .section-faq-desc{
+
+    .nav-dropdown-item .right .section-faq-desc {
         font-size: 12px;
-        letter-spacing: -2px;
+        /*letter-spacing: -2px;*/
+        margin-top: -20px;
     }
-    .nav-dropdown-item .right h3{
+
+    .nav-dropdown-item .right h3 {
         font-size: 13px;
     }
-    .nav-dropdown-item .right{
+
+    .nav-dropdown-item .right {
         padding: 0px;
         margin: 0px;
         padding-left: 15px;
     }
-    .nav-dropdown-item .left{
+    .nav-dropdown-item .left .icon{
+        width: 35px;
+        height: 35px;
+        left: 2px;
+    }
+    .nav-dropdown-item .right{
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .nav-dropdown-item .right .section-faq-desc{
         display: none;
+    }
+    .nav-dropdown-item .right h3 {
+        font-size: 13px;
+        padding-top: 6px;
+        padding-left: 10px;
     }
 }
