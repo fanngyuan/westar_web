@@ -1541,10 +1541,15 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
 
     .am-topbar-collapse.am-in {
         overflow-y: unset;
+        position: relative;
+        top: -40px;
+        background: #ffffff;
     }
 
     .am-topbar-btn {
         margin-top: 42px;
+        background: rgba(21, 39, 200, 1);
+        border: none;
     }
 
     .am-topbar-collapse .am-dropdown.am-active .am-dropdown-content {
@@ -1552,13 +1557,21 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         box-shadow: 3px 3px 5px #dddddd;
         border: none;
         width: auto;
+        min-width: 290px;
         /*width: 255px;*/
     }
 
     .am-dropdown .am-dropdown-content > li {
         height: 45px;
     }
-
+    .am-nav>li.am-active>a, .am-nav>li.am-active>a:hover, .am-nav>li.am-active>a:focus{
+        background: none;
+        color: #000000;
+    }
+    .am-btn-secondary:hover, .am-btn-secondary:focus, .am-btn-secondary:active, .am-btn-secondary.am-active, .am-active .am-dropdown-toggle.am-btn-secondary{
+        background: rgba(21, 39, 200, 1);
+        color: #ffffff;
+    }
     /*.section-bg-resize {*/
     /*height: 133px;*/
     /*background-size: 177px 133px;*/
@@ -1720,7 +1733,9 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
     .section-one-left .section-one-desc, .section-one-right .section-one-desc {
         font-size: 10px;
         padding-top: 0px;
+        line-height: 14px;
     }
+
 
     .section-one-right button, .section-three-left button, .section-one-left button, .section-one-desc button {
         height: 25px;
@@ -1759,7 +1774,6 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         padding-left: 39px;
         padding-right: 39px;
     }
-
 }
 
 @media screen and (max-width: 320px){
@@ -1770,5 +1784,9 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
         font-size: 13px;
         padding-top: 6px;
         padding-left: 10px;
+    }
+
+    .am-topbar-collapse .am-dropdown.am-active .am-dropdown-content{
+        min-width: 250px;
     }
 }
