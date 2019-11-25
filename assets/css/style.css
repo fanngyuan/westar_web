@@ -1011,6 +1011,21 @@ ul.am-dropdown-content > li > a {
     color: rgba(0, 0, 0, 1);
     line-height: 25px;
 }
+.list_news .am-list .am-list-item-desced a, .am-list .am-list-item-thumbed a {
+    font-size: 16px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    line-height: 22px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-bottom: 0.3rem;
+}
+
 
 .am-titlebar-default .am-titlebar-title {
     font-size: 24px;
