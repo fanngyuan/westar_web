@@ -1,0 +1,148 @@
+{{ define "main" -}}
+<!--第一栏 开始 -->
+<div class="main-section section-one" id="section-one">
+    <div class="section-one-left">
+        <h1>分层区块链的先行者</h1>
+        <div class="section-one-desc">
+            创建下一代分层区块链及金融基础设施
+        </div>
+
+        <button>
+            MORE
+        </button>
+    </div>
+</div>
+<!--第一栏 结束 -->
+
+<!--第二栏 开始 -->
+<div class="main-section section-two section-bg-resize">
+    <div class="section-two-bg">
+    </div>
+
+    <div class="section-one-right">
+        <h3>Sirius Protocol</h3>
+        <div class="section-one-desc">
+            去中心化、安全、多方、及时的二层支付协议
+        </div>
+        <a href="/sirius.html">
+            <button>
+                LEARN MORE
+            </button>
+        </a>
+    </div>
+</div>
+<!--第二栏 结束 -->
+
+<!--第三栏 开始 -->
+<div class="main-section section-three section-bg-resize">
+    <div class="section-two-bg">
+    </div>
+
+    <div class="section-one-left section-three-left">
+        <h3>Thor Protocol</h3>
+        <div class="section-one-desc">
+            闪电网络上的智能合约和仲裁服务
+        </div>
+        <a href="/thor.html">
+            <button>
+                LEARN MORE
+            </button>
+        </a>
+    </div>
+</div>
+<!--第三栏 开始 -->
+
+<!--第四栏 开始 -->
+<div class="main-section section-four section-bg-resize">
+    <div class="section-two-bg">
+    </div>
+
+    <div class="section-one-right">
+        <h3>Stargate Protocol</h3>
+        <div class="section-one-desc">
+            Starcoin 的二层协议实现，实现了通用的状态通道，提供扩展性以及便捷性
+        </div>
+        <a href="/stargate.html">
+            <button>
+                LEARN MORE
+            </button>
+        </a>
+    </div>
+
+</div>
+<!--第四栏 开始 -->
+
+<!--第五栏 开始 -->
+<div class="main-section section-five">
+    <div class="section-title">最新动态</div>
+    <div class="am-container-big">
+        <ul data-am-widget="gallery" class="am-gallery sm-block-grid-1
+  md-block-grid-3 lg-block-grid-3 am-gallery-imgbordered" data-am-gallery="{  }">
+
+            {{ with .Site.GetPage "/news" }}
+            {{ range first 3 .Pages }}
+            <li>
+                <div class="am-gallery-item new-container-item-bg">
+                    <a href="{{ .Permalink }}">
+                        {{ if isset .Params "cover" }}
+                        <img src="{{ .Params.cover }}" alt="{{ .Title }}"/>
+                        {{ else }}
+                        <img src="/img/default/{{ index (shuffle (seq 1 4)) 0 }}.jpg" alt="{{ .Title }}"/>
+                        {{ end }}
+
+                        <h3 class="am-gallery-title">{{ .Title }}</h3>
+                        <div class="am-gallery-desc">{{ .Date.Format "2006-01-02 15:04:05" }}</div>
+                        <div class="section-news-desc">
+                            {{ .Description }}
+                        </div>
+                    </a>
+                </div>
+            </li>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </div>
+    <a href="/news/">
+        <div class="news-button">
+            LEARN MORE
+        </div>
+    </a>
+</div>
+<!--第五栏 开始 -->
+
+<!--第六栏 开始 -->
+<div class="main-section section-sex">
+    <div class="am-container-big">
+        <div class="section-title">常见问题</div>
+
+        <ul data-am-widget="gallery" class="am-gallery sm-block-grid-1
+  md-block-grid-2 lg-block-grid-2 am-gallery-imgbordered" data-am-gallery="{  }">
+
+            {{ with .Site.GetPage "/faq" }}
+            {{ range $pk , $pv := first 4 .Pages }}
+            <li>
+                <div class="am-gallery-item faq-container-item-bg">
+                    <div class="left">
+                        <div class="ico faq-index">{{ $pk }}</div>
+                    </div>
+                    <div class="right">
+                        <a href="{{ .Permalink }}">
+                            <h3 class="am-gallery-title">{{ $pv.Title }}</h3>
+                            <div class="section-faq-desc">
+                                {{ .Description }}
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            {{ end }}
+            {{ end }}
+
+        </ul>
+
+
+    </div>
+</div>
+<!--第六栏 结束 -->
+{{ end }}
+

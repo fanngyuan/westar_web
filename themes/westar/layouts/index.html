@@ -1,75 +1,102 @@
 {{ define "main" -}}
+
 <!--第一栏 开始 -->
 <div class="main-section section-one" id="section-one">
-    <div class="section-one-left">
-        <h1>分层区块链的先行者</h1>
-        <div class="section-one-desc">
-            创建下一代分层区块链及金融基础设施
-        </div>
 
-        <button>
-            MORE
-        </button>
+    <div class="section-one-bg">
+        <div class="container-width-max">
+            <div class="section-one-block-bg">
+            </div>
+            <div class="section-left section-left-fir">
+                <h1>分层区块链的先行者</h1>
+                <div class="section-one-desc">
+                    创建下一代分层区块链及金融基础设施
+                </div>
+                <a href="">
+                    <button>
+                        MORE
+                    </button>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 <!--第一栏 结束 -->
 
 <!--第二栏 开始 -->
 <div class="main-section section-two section-bg-resize">
-
-    <div class="section-one-right">
-        <h3>Sirius Protocol</h3>
-        <div class="section-one-desc">
-            去中心化、安全、多方、及时的二层支付协议
+    <div class="section-bg-container">
+        <div class="section-two-bg">
         </div>
-        <a href="/sirius.html">
-            <button>
-                LEARN MORE
-            </button>
-        </a>
+    </div>
+    <div class="section-right-container">
+        <div class="section-one-right float-left">
+            <h3>Sirius Protocol</h3>
+            <div class="section-one-desc">
+                去中心化、安全、多方、及时的二层支付协议
+            </div>
+            <a href="">
+                <button>
+                    LEARN MORE
+                </button>
+            </a>
+        </div>
     </div>
 </div>
+
 <!--第二栏 结束 -->
 
 <!--第三栏 开始 -->
 <div class="main-section section-three section-bg-resize">
-    <div class="section-one-left section-three-left">
-        <h3>Thor Protocol</h3>
-        <div class="section-one-desc">
-            闪电网络上的智能合约和仲裁服务
+    <div class="section-bg-container section-bg-container-right">
+        <div class="section-three-bg">
         </div>
-        <a href="/thor.html">
-            <button>
-                LEARN MORE
-            </button>
-        </a>
+    </div>
+    <div class="section-right-container">
+        <div class="section-left section-left-thr section-three-left float-left">
+            <h3>Thor Protocol</h3>
+            <div class="section-one-desc">
+                闪电网络上的智能合约和仲裁服务
+            </div>
+            <a href="">
+                <button>
+                    LEARN MORE
+                </button>
+            </a>
+        </div>
     </div>
 </div>
 <!--第三栏 开始 -->
 
 <!--第四栏 开始 -->
 <div class="main-section section-four section-bg-resize">
-    <div class="section-one-right">
-        <h3>Stargate Protocol</h3>
-        <div class="section-one-desc">
-            Starcoin 的二层协议实现，实现了通用的状态通道，提供扩展性以及便捷性
+    <div class="section-bg-container">
+        <div class="section-four-bg">
         </div>
-        <a href="/stargate.html">
-            <button>
-                LEARN MORE
-            </button>
-        </a>
     </div>
-
+    <div class="section-right-container">
+        <div class="section-one-right float-left">
+            <h3>Stargate Protocol</h3>
+            <div class="section-one-desc">
+                Starcoin 的二层协议实现，实现了通用的状态通道，提供扩展性以及便捷性
+            </div>
+            <a href="">
+                <button>
+                    LEARN MORE
+                </button>
+            </a>
+        </div>
+    </div>
 </div>
-<!--第四栏 开始 -->
+<!--第四栏 结束 -->
 
 <!--第五栏 开始 -->
-<div class="main-section section-five">
+<div class="main-section section-five ">
     <div class="section-title">最新动态</div>
-    <div class="am-container-big">
+    <div class="am-container-big max-1200">
         <ul data-am-widget="gallery" class="am-gallery sm-block-grid-1
   md-block-grid-3 lg-block-grid-3 am-gallery-imgbordered" data-am-gallery="{  }">
+
 
             {{ with .Site.GetPage "/news" }}
             {{ range first 3 .Pages }}
@@ -92,9 +119,10 @@
             </li>
             {{ end }}
             {{ end }}
+
         </ul>
     </div>
-    <a href="/news/">
+    <a href="">
         <div class="news-button">
             LEARN MORE
         </div>
@@ -108,7 +136,7 @@
         <div class="section-title">常见问题</div>
 
         <ul data-am-widget="gallery" class="am-gallery sm-block-grid-1
-  md-block-grid-2 lg-block-grid-2 am-gallery-imgbordered" data-am-gallery="{  }">
+  md-block-grid-1 lg-block-grid-2 am-gallery-imgbordered" data-am-gallery="{  }">
 
             {{ with .Site.GetPage "/faq" }}
             {{ range $pk , $pv := first 4 .Pages }}
@@ -130,11 +158,13 @@
             {{ end }}
             {{ end }}
 
+
         </ul>
 
 
     </div>
 </div>
 <!--第六栏 结束 -->
+
 {{ end }}
 

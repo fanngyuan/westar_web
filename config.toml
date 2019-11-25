@@ -1,4 +1,60 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
 title = "westar"
 theme="Westar"
+
+
+
+
+[[menu.main]]
+    name = "技术"
+    url = "/"
+    weight = 1
+    pre = ""
+
+[[menu.main]]
+    parent = "技术"
+    identifier = "Sirius Protocol"
+    name = "Sirius Protocol"
+    weight = 2
+    pre = "去中心化、安全、多方、及时的二层支付协议"
+    url = "/sirius/#"
+
+
+[[menu.main]]
+    parent = "技术"
+    identifier = "Thor Protocol"
+    name = "Thor Protocol"
+    weight = 2
+    pre = "闪电网络上的智能合约和仲裁服务"
+    url = "/thor/#"
+
+[[menu.main]]
+    parent = "技术"
+    identifier = "Stargate Protocol"
+    name = "Stargate Protocol"
+    weight = 2
+    pre = "Starcoin 的二层协议实现"
+    url = "/stargate/#"
+
+[[menu.main]]
+    identifier = "新闻"
+    name = "新闻"
+    weight = 2
+    url = "/news/#"
+
+[[menu.main]]
+    identifier = "开发者"
+    name = "开发者"
+    weight = 2
+    url = "/contact/#"
+
+[[menu.main]]
+    identifier = "关于我们"
+    name = "关于我们"
+    weight = 2
+    url = "/about/#"
+
+
+
+

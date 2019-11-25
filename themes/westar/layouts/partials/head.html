@@ -2,23 +2,23 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>{{ .Site.Title }} - 首页</title>
+    <title>westar</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/amazeui.min.css"/>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+    <link rel="alternate icon" type="image/png" href="{{ .Site.BaseURL }}/i/favicon.png">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css?v=0.11112">
 </head>
 <body>
 <header class="am-topbar am-topbar-fixed-top" id="header">
     <!--<header class="am-topbar">-->
-    <div class="am-container-big">
+    <div class="am-container-big am-container-big-header">
         <h1 class="am-topbar-brand">
-            <a href="{{ .Site.BaseURL }}" alt="westar logo" class="logo-a"><img src="{{ .Site.BaseURL }}images/logo.png" alt=""></a>
+            <a href="#" alt="westar logo" class="logo-a"><img src="{{ .Site.BaseURL }}/images/logo.png" alt=""></a>
         </h1>
         <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
                 data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
@@ -27,69 +27,42 @@
         <div class="am-collapse am-topbar-collapse" id="collapse-head">
             <div class="am-topbar-right">
                 <ul class="am-nav am-nav-pills am-topbar-nav">
-                    <li class="am-dropdown " data-am-dropdown >
-                        <a  class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">技术</a>
-                        <ul class="am-dropdown-content">
-                            <li>
-                                <a href="/sirius.html">
-                                    <div class="nav-dropdown-item">
-                                        <div class="left">
-                                            <div class="icon nav-icon-sirius">
 
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <h3 class="am-gallery-title">Sirius Protocol</h3>
-                                            <div class="section-faq-desc">
-                                                去中心化、安全、多方、及时的二层支付协议
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/thor.html">
-                                    <div class="nav-dropdown-item">
-                                        <div class="left">
-                                            <div class="icon nav-icon-thor">
+                    {{ $currentNode := . }}
+                    {{ range .Site.Menus.main }}
+                        {{ if .HasChildren }}
+                            <li class="am-dropdown {{if $currentNode.HasMenuCurrent "main" . }} am-active {{end}}" data-am-dropdown>
+                                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:void(0);">{{ .Name }}</a>
+                                <ul class="am-dropdown-content">
+                                    {{ range .Children }}
+                                        <li>
+                                            <a href="{{ .URL | absURL }}">
+                                                <div class="nav-dropdown-item">
+                                                    <div class="left">
+                                                        <div class="icon nav-icon-sirius">
 
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <h3 class="am-gallery-title">Thor Protocol</h3>
-                                            <div class="section-faq-desc">
-                                                闪电网络上的智能合约和仲裁服务
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <h3 class="am-gallery-title">{{ .Name }}</h3>
+                                                        <div class="section-faq-desc">
+                                                            {{ .Pre }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    {{ end }}
+
+                                </ul>
                             </li>
 
-                            <li>
-                                <a href="/stargate.html">
-                                    <div class="nav-dropdown-item">
-                                        <div class="left">
-                                            <div class="icon nav-icon-stargate">
+                        {{ else }}
+                            <li class="{{if $currentNode.HasMenuCurrent "main" . }} am-active {{end}}"  ><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    {{ end }}
 
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <h3 class="am-gallery-title">Stargate Protocol</h3>
-                                            <div class="section-faq-desc">
-                                                Starcoin 的二层协议实现
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
 
-                        </ul>
-                    </li>
-                    <li class="am-dropdown" data-am-dropdown>
-                        <a href="/news/">新闻</a>
-                    </li>
-                    <li><a href="/contact.html">开发者</a></li>
-                    <li><a href="/about.html">关于我们</a></li>
                     <li class="am-dropdown" data-am-dropdown>
                         <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
                             中文 <span class="am-icon-caret-down"></span>

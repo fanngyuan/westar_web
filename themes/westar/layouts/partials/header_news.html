@@ -27,69 +27,43 @@
         <div class="am-collapse am-topbar-collapse" id="collapse-head">
             <div class="am-topbar-right">
                 <ul class="am-nav am-nav-pills am-topbar-nav">
-                    <li class="am-dropdown " data-am-dropdown >
-                        <a  class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">技术</a>
-                        <ul class="am-dropdown-content">
-                            <li>
-                                <a href="/sirius.html">
-                                    <div class="nav-dropdown-item">
-                                        <div class="left">
-                                            <div class="icon nav-icon-sirius">
 
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <h3 class="am-gallery-title">Sirius Protocol</h3>
-                                            <div class="section-faq-desc">
-                                                去中心化、安全、多方、及时的二层支付协议
-                                            </div>
+
+                    {{ $currentNode := . }}
+                    {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
+                    <li class="am-dropdown {{if $currentNode.HasMenuCurrent "main" . }} am-active {{end}}" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:void(0);">{{ .Name }}</a>
+                    <ul class="am-dropdown-content">
+                        {{ range .Children }}
+                        <li>
+                            <a href="{{ .URL | absURL }}">
+                                <div class="nav-dropdown-item">
+                                    <div class="left">
+                                        <div class="icon nav-icon-sirius">
+
                                         </div>
                                     </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/thor.html">
-                                    <div class="nav-dropdown-item">
-                                        <div class="left">
-                                            <div class="icon nav-icon-thor">
-
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <h3 class="am-gallery-title">Thor Protocol</h3>
-                                            <div class="section-faq-desc">
-                                                闪电网络上的智能合约和仲裁服务
-                                            </div>
+                                    <div class="right">
+                                        <h3 class="am-gallery-title">{{ .Name }}</h3>
+                                        <div class="section-faq-desc">
+                                            {{ .Pre }}
                                         </div>
                                     </div>
-                                </a>
-                            </li>
+                                </div>
+                            </a>
+                        </li>
+                        {{ end }}
 
-                            <li>
-                                <a href="/stargate.html">
-                                    <div class="nav-dropdown-item">
-                                        <div class="left">
-                                            <div class="icon nav-icon-stargate">
-
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <h3 class="am-gallery-title">Stargate Protocol</h3>
-                                            <div class="section-faq-desc">
-                                                Starcoin 的二层协议实现
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                        </ul>
+                    </ul>
                     </li>
-                    <li class="am-dropdown" data-am-dropdown>
-                        <a href="/news/">新闻</a>
-                    </li>
-                    <li><a href="/contact.html">开发者</a></li>
-                    <li><a href="/about.html">关于我们</a></li>
+
+                    {{ else }}
+                    <li class="{{if $currentNode.HasMenuCurrent "main" . }} am-active {{end}}"  ><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                    {{ end }}
+
+
                     <li class="am-dropdown" data-am-dropdown>
                         <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
                             中文 <span class="am-icon-caret-down"></span>

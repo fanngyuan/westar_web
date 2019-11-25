@@ -1,3 +1,4 @@
+
 <footer class="footer">
     <div class="footer-logo">
         <img src="{{ .Site.BaseURL }}/images/footer-logo.png" width="50%" height="50%" alt="">
@@ -12,22 +13,44 @@
             <li><a href=""><img src="{{ .Site.BaseURL }}/images/ic_weibo_white@2x.png" alt=""></a></li>
             <li><a href=""><img src="{{ .Site.BaseURL }}/images/ic_wechat_white@2x.png" alt=""></a></li>
             <li><a href=""><img src="{{ .Site.BaseURL }}/images/ic_github_white@2x.png" alt=""></a></li>
-
         </ul>
     </div>
     <p>Copyright <a href="" target="_blank">@WeStar</a></p>
 </footer>
-<script src="{{ .Site.BaseURL }}/js/zepto.min.js"></script>
-<script src="{{ .Site.BaseURL }}/js/amazeui.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/zepto.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/amazeui.min.js"></script>
 <script>
     $(function () {
         $(window).scroll(function () {
             var top = $(window).scrollTop();
-            if (top > 50) {
+            if (top > 120) {
                 $("#header").css({"background": "#110651"})
             } else {
                 $("#header").css({"background-color": "rgba(0,0,0,0)"})
             }
+        });
+
+        function winResize() {
+            var w = $(window).width();
+            var h = $(window).height();
+            $("#section-one").css({"height": h, "width": w});
+            var p = h / w
+            // 首页banner 背景图长宽比
+            if (p >= 0.58) {
+                $(".section-one-bg").css({
+                    "background-size": "auto 100%"
+                })
+            } else {
+                $(".section-one-bg").css({
+                    "background-size": "100% auto"
+                })
+            }
+        }
+
+        winResize();
+
+        $(window).resize(function () {
+            winResize();
         });
 
         var faqLenth = $(".faq-index").length;
