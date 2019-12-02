@@ -37,17 +37,17 @@ theme="Westar"
     pre = "Starcoin 的二层协议实现"
     url = "/stargate/#"
 
-[[menu.main]]
-    identifier = "新闻"
-    name = "新闻"
-    weight = 2
-    url = "/news/#"
+#[[menu.main]]
+#    identifier = "新闻"
+#    name = "新闻"
+#    weight = 2
+#    url = "/news/#"
 
-[[menu.main]]
-    identifier = "开发者"
-    name = "开发者"
-    weight = 2
-    url = "/contact/#"
+#[[menu.main]]
+#    identifier = "开发者"
+#   name = "开发者"
+#    weight = 2
+#    url = "/contact/#"
 
 [[menu.main]]
     identifier = "关于我们"
