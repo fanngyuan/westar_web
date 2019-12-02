@@ -843,6 +843,7 @@ ul.am-dropdown-content > li > a {
 .footer {
     background: #110651;
     padding-bottom: 80px;
+    clear: both;
 }
 
 .footer p {
