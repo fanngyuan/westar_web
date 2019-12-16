@@ -32,7 +32,7 @@
                     {{ $currentNode := . }}
                     {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
-                    <li class="am-dropdown {{if $currentNode.HasMenuCurrent "main" . }} am-active {{end}}" data-am-dropdown>
+                    <li class="am-dropdown" data-am-dropdown>
                     <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:void(0);">{{ .Name }}</a>
                     <ul class="am-dropdown-content">
                         {{ range .Children }}
