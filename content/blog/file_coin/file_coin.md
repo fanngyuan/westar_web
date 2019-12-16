@@ -1,6 +1,8 @@
 ---
 title: Filecoin 基本原理解读
 date: 2019-12-12
+description: "2019年12月07日，Westar实验室组织了第一次技术Meetup，本次Meetup聚焦在Rust网络开发方面"
+cover: "https://miro.medium.com/max/2800/0*YBXHhkjN2-D1l9wU.png"
 tags:
 - filecoin
 - blockchain
