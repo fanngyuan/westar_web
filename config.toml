@@ -3,8 +3,7 @@ languageCode = "en-us"
 title = "westar"
 theme="Westar"
 
-
-
+uglyURLs=true
 
 [[menu.main]]
     name = "技术"
@@ -19,7 +18,7 @@ theme="Westar"
     name = "Blog"
     weight = 2
     pre = "技术博客"
-    url = "/blog/#"
+    url = "//blog.html/#"
 
 
 [[menu.main]]
