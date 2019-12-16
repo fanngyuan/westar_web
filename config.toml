@@ -27,7 +27,7 @@ uglyURLs=true
     name = "Sirius Protocol"
     weight = 2
     pre = "去中心化、安全、多方、及时的二层支付协议"
-    url = "/sirius/#"
+    url = "/sirius.html/#"
 
 
 [[menu.main]]
@@ -36,7 +36,7 @@ uglyURLs=true
     name = "Thor Protocol"
     weight = 2
     pre = "闪电网络上的智能合约和仲裁服务"
-    url = "/thor/#"
+    url = "/thor.html/#"
 
 [[menu.main]]
     parent = "技术"
@@ -44,7 +44,7 @@ uglyURLs=true
     name = "Stargate Protocol"
     weight = 2
     pre = "Starcoin 的二层协议实现"
-    url = "/stargate/#"
+    url = "/stargate.html/#"
 
 
 #[[menu.main]]
@@ -63,7 +63,7 @@ uglyURLs=true
     identifier = "关于我们"
     name = "关于我们"
     weight = 2
-    url = "/about/#"
+    url = "/about.html/#"
 
 
 
