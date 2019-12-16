@@ -131,39 +131,39 @@
 <!--第五栏 开始 -->
 
 <!--第六栏 常见问题  开始 -->
-<!--<div class="main-section section-sex">-->
-    <!--<div class="am-container-big">-->
-        <!--<div class="section-title">常见问题</div>-->
+<div class="main-section section-sex">
+    <div class="am-container-big">
+        <div class="section-title">常见问题</div>
 
-        <!--<ul data-am-widget="gallery" class="am-gallery sm-block-grid-1-->
-  <!--md-block-grid-1 lg-block-grid-2 am-gallery-imgbordered" data-am-gallery="{  }">-->
+        <ul data-am-widget="gallery" class="am-gallery sm-block-grid-1
+  md-block-grid-1 lg-block-grid-2 am-gallery-imgbordered" data-am-gallery="{  }">
 
-            <!--{{ with .Site.GetPage "/faq" }}-->
-            <!--{{ range $pk , $pv := first 4 .Pages }}-->
-            <!--<li>-->
-                <!--<div class="am-gallery-item faq-container-item-bg">-->
-                    <!--<div class="left">-->
-                        <!--<div class="ico faq-index">{{ $pk }}</div>-->
-                    <!--</div>-->
-                    <!--<div class="right">-->
-                        <!--<a href="{{ .Permalink }}">-->
-                            <!--<h3 class="am-gallery-title">{{ $pv.Title }}</h3>-->
-                            <!--<div class="section-faq-desc">-->
-                                <!--{{ .Description }}-->
-                            <!--</div>-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</li>-->
-            <!--{{ end }}-->
-            <!--{{ end }}-->
-
-
-        <!--</ul>-->
+            {{ with .Site.GetPage "/faq" }}
+            {{ range $pk , $pv := first 4 .Pages }}
+            <li>
+                <div class="am-gallery-item faq-container-item-bg">
+                    <div class="left">
+                        <div class="ico faq-index">{{ $pk }}</div>
+                    </div>
+                    <div class="right">
+                        <a href="{{ .Permalink }}">
+                            <h3 class="am-gallery-title">{{ $pv.Title }}</h3>
+                            <div class="section-faq-desc">
+                                {{ .Description }}
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            {{ end }}
+            {{ end }}
 
 
-    <!--</div>-->
-<!--</div>-->
+        </ul>
+
+
+    </div>
+</div>
 <!--第六栏 结束 -->
 
 {{ end }}

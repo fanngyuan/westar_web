@@ -12,6 +12,16 @@ theme="Westar"
     weight = 1
     pre = ""
 
+
+[[menu.main]]
+    parent = "技术"
+    identifier = "博客"
+    name = "Blog"
+    weight = 2
+    pre = "技术博客"
+    url = "/blog/#"
+
+
 [[menu.main]]
     parent = "技术"
     identifier = "Sirius Protocol"
@@ -36,6 +46,7 @@ theme="Westar"
     weight = 2
     pre = "Starcoin 的二层协议实现"
     url = "/stargate/#"
+
 
 #[[menu.main]]
 #    identifier = "新闻"
