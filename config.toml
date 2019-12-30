@@ -1,6 +1,6 @@
 baseURL = "http://www.example.com"
 languageCode = "en-us"
-title = "westar"
+title = "Westar"
 theme="Westar"
 
 uglyURLs=true
