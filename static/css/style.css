@@ -1012,6 +1012,7 @@ ul.am-dropdown-content > li > a {
     color: rgba(0, 0, 0, 1);
     line-height: 25px;
 }
+
 .list_news .am-list .am-list-item-desced a, .am-list .am-list-item-thumbed a {
     font-size: 16px;
     font-family: PingFangSC-Semibold, PingFang SC;
@@ -1026,7 +1027,6 @@ ul.am-dropdown-content > li > a {
     padding-bottom: 0;
     margin-bottom: 0.3rem;
 }
-
 
 .am-titlebar-default .am-titlebar-title {
     font-size: 24px;
@@ -2159,7 +2159,7 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
     ul.am-dropdown-content {
         width: 626px;
         /*height: 453px;*/
-        height:auto;
+        height: auto;
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08);
     }
@@ -2507,4 +2507,41 @@ body .about-container-section .am-gallery-imgbordered .am-gallery-item img.techn
     .section-five .section-news-desc {
         line-height: 26px;
     }
+}
+
+/*blog list page*/
+.news-container-section .am-gallery-imgbordered .list-page-post-time {
+    margin: 20px 0px 0px 0px;
+    font-size: 16px;
+    opacity: 40%;
+    color: #000000;
+}
+
+.news-container-section .am-gallery-imgbordered .list-page-post-title {
+    margin: 12px 0px;
+    font-size: 24px;
+}
+
+.news-container-section .am-gallery-imgbordered .list-page-post-desc {
+    margin-bottom: 32px;
+    font-size: 16px;
+    opacity: 80%;
+    color: #000000;
+}
+
+.am-gallery-imgbordered .am-gallery-item .list-thub-cover {
+    background: #f2f3f5;
+    min-height: 260px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.am-gallery-imgbordered .list-page-li > li {
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+.am-gallery-imgbordered .list-page-li {
+    padding: 0px;
+    margin-bottom: 40px;
 }
