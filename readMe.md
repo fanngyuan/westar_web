@@ -22,6 +22,14 @@ cover: http://cn.bing.com/az/hprichv/LondonTrainStation_GettyRR_139321755_ZH-CN7
 ---
 ```
 
+### 配置修改
+- 目前用到抽离的配置均放在根目录`config.toml`，参照修改即可。
+
+### 导航菜单配置
+
+- 编辑共目录`config.toml`（修改常用配置），参照现有配置menu配置项即可
+
+
 ### 运行server
 - 开发运行
 ```
@@ -31,3 +39,15 @@ hugo server --theme=westar --buildDrafts
 ```
 hugo server -D
 ```
+
+
+
+
+### 编辑发布
+- 项目根目录执行`hugo`即可编译静态文件，编译后在根目录生成`public`文件夹，将public部署至指定地点即可直接访问。
+- 注：编译前修改`config.toml`中baseURL参数对应当前环境域名。
+
+
+
+
+
